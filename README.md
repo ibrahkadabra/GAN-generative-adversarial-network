@@ -4,7 +4,7 @@ This is a simple GAN project using MNIST datasets
 
 The discriminator and the Generator are two convolutional neural network compete against each other.
 
-'''
+```
 
 Network : Discriminator
 
@@ -29,9 +29,9 @@ LeakyReLU()                                                                     
 Flatten()                                                                                              #(bs, 64)
 Linear(in_features = 64, out_features = 1)                                                             #(bs, 1)
 
-'''
+```
 
-'''
+```
 
 Network : Generator
 
@@ -63,4 +63,4 @@ ReLU()                                                                          
 ConvTranspose2d( in_channels = 64, out_channels = 1, kernel_size = (4,4), stride = 2)                  #(bs, 1, 28, 28)
 Tanh()                                                                                                 #(bs, 1, 28, 28)
 
-'''
+```
